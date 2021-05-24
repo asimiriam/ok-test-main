@@ -1,0 +1,29 @@
+@import "./../../styles/index.scss";
+
+#title-step1 {
+    font-size: $size-20;
+    font-weight: bolder;
+}
+
+.info-text-step1 {
+    display: inline-block;
+    margin-top: $size-32;
+
+    .subtitle-info-text {
+        font-weight: bold;
+    }
+
+    .info-text-step1-50 {
+        width: 50%;
+        text-align: center;
+        float: left;
+
+        .info-text-imag {
+            padding: $size-20 $size-24 0 $size-24;
+        }
+    }
+
+    .info-checkbox {
+        font-size: $size-12;
+    }
+}

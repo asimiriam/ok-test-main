@@ -1,0 +1,25 @@
+
+@import "styles/index.scss";
+
+.App {
+  &-header{
+    &-logo{
+     max-width: 80px;
+    }
+  }
+  &-content{
+    padding: 1rem 4rem;
+    h3{
+      color: $primary-color;
+    }
+    p{
+      color: $secondary-color;
+    }
+  }
+}
+    
+#blue-line {
+  @include set-size (3px, 38px);
+  margin-top: 8px;
+  background-color: $blue;
+}

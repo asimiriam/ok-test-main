@@ -1,0 +1,58 @@
+
+@import "../../../styles/index.scss";
+
+.MuiStepper-root{
+  background-color: $grey !important;
+  padding: 24px 33% !important;
+}
+.MuiStepIcon-root {
+  color: $secondary-color-light !important;
+
+  &.MuiStepIcon-active {
+    color: $secondary-color !important;
+  }
+}
+
+.MuiStepIcon-completed {
+  color: $primary-color !important;
+}
+
+#card-product-information {
+  @extend .base-font;
+  margin: 30px 100px;
+  min-width: 800px;
+  font-size: $size-14;
+}
+
+ #next-button-step {
+  @include set-position($right: 0);
+  margin-right: 100px;
+  background-color: $secondary-color;
+  color: $white;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  &:disabled {
+    background-color: $secondary-color-light;
+  }
+}
+
+#back-button-step {
+  @extend .base-font-bold;
+  text-transform: capitalize;
+  margin-left: 80px;
+}
+
+.div-buttons-steps {
+  border-top: 1px solid $grey;
+  padding: 20px;
+  height: 40px;
+}
+
+#finish-button-step {
+  @include set-position($right: 0);
+  margin-right: 100px;
+  color: $primary-color;
+  font-weight: bold;
+  text-transform: capitalize;
+}

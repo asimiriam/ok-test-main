@@ -1,0 +1,20 @@
+@import "./../../styles/index.scss";
+
+#title-step3 {
+    font-size: $size-20;
+    font-weight: bolder;
+
+    .ok-icon {
+        color: $green;
+        margin-right: 10px;
+    }
+    
+    .ko-icon {
+        color: $red;
+        margin-right: 10px;
+    }
+}
+
+.div-spinner {
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/index.scss';
+
+.header {
+    height: 60px;
+    background-color: $secondary-color;
+    padding: 0;
+}
+
+.title {
+    @include set-font(400, $size-26);
+    color: $white;
+    line-height: 1.125;
+    word-break: break-word;
+    padding: $size-10;
+    text-align: left;
+    width: 47%;
+    float: left;
+}
+
+.lang-buttons {
+    text-align: right;
+
+    .lang-btn {
+        border-radius: 10%;
+        border: 1px solid $secondary-color-light;
+        color: $secondary-color-light;
+        background-color: transparent;
+        margin: 5px;
+    }
+
+    .lang-btn-active {
+        border: 2px solid $white;
+        font-weight: bold;
+        color: $white;
+    }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .title {
+        width: auto;
+    }
+}
+

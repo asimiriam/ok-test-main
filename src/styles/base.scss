@@ -1,0 +1,26 @@
+$primary-color: #FF0049;
+$secondary-color: #002B45;
+$terciary-color: #FFF1E5;
+
+$secondary-color-light: #758F9B;
+
+$white: #FFFFFF;
+$black: #000000;
+$blue: #00C3DD;
+$grey: #CBD5DA;
+$red: #FF0000;
+$green: #00FF00;
+
+.base-font {
+    color: $secondary-color;
+}
+
+.base-font-normal {
+    @extend .base-font;
+    font-weight: normal;
+}
+
+.base-font-bold {
+    @extend .base-font;
+    font-weight: bold;
+}
